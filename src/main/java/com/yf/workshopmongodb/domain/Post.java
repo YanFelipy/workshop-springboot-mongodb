@@ -21,10 +21,10 @@ public class Post implements Serializable {
 	private String title;
 	private String body;
 	private AuthorDTO author;
-		
+
 	public Post() {
 	}
-	
+
 	private List<CommentDTO> comments = new ArrayList<>();
 
 	public Post(String id, Date date, String title, String body, AuthorDTO author) {
@@ -67,6 +67,7 @@ public class Post implements Serializable {
 	public void setBody(String body) {
 		this.body = body;
 	}
+
 	public AuthorDTO getAuthor() {
 		return author;
 	}
@@ -74,7 +75,6 @@ public class Post implements Serializable {
 	public void setAuthor(AuthorDTO author) {
 		this.author = author;
 	}
-
 
 	public List<CommentDTO> getComments() {
 		return comments;
@@ -109,5 +109,4 @@ public class Post implements Serializable {
 		return true;
 	}
 
-	
 }

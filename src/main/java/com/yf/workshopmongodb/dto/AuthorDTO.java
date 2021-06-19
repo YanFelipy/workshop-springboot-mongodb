@@ -6,11 +6,11 @@ public class AuthorDTO {
 
 	private String id;
 	private String name;
-	
+
 	public AuthorDTO() {
-		
+
 	}
-	
+
 	public AuthorDTO(User obj) {
 		setId(obj.getId());
 		setName(obj.getName());
@@ -31,5 +31,5 @@ public class AuthorDTO {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 }
