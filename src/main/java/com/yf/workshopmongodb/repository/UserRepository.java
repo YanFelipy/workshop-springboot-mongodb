@@ -8,4 +8,6 @@ import com.yf.workshopmongodb.domain.User;
 @Repository
 public interface UserRepository extends MongoRepository<User, String>{
 
+	
+
 }

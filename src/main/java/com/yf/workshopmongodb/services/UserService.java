@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.yf.workshopmongodb.domain.Post;
 import com.yf.workshopmongodb.domain.User;
 import com.yf.workshopmongodb.dto.UserDTO;
 import com.yf.workshopmongodb.repository.UserRepository;
@@ -48,4 +49,7 @@ public class UserService {
 	public User fromDTO(UserDTO objDto) {
 		return new User(objDto.getId(), objDto.getName(), objDto.getEmail());
 	}
+	
+
+	
 }
